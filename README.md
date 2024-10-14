@@ -6,5 +6,5 @@ using *Java*
 ## Getting Started
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ```
-https://leetcode.com/
+<a href=https://leetcode.com/>https://leetcode.com/</a>
 ```
