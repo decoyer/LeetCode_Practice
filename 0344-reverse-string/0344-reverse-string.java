@@ -1,6 +1,6 @@
 class Solution {
     public void reverseString(char[] s) {
-        // 배열을 절반으로 나누어 앞뒤 요소 자리 바꾸기
+        // 배열의 가운데 요소를 기준으로 앞뒤 요소 자리 바꾸기
         for (int i = 0; i < s.length / 2; i++) {
             char tmp = ' ';
             
