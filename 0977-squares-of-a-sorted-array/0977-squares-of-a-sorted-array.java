@@ -1,21 +1,10 @@
-import java.util.Arrays;
-
 class Solution {
     public int[] sortedSquares(int[] nums) {
-        int a = 0;
-        int tmp = 0;
-        
-        while (a < nums.length) {
-            int num = nums[a];
-            
-            num *= num;
-            nums[a] = num;
-            
-            a++;
-        }
+        for (int i = 0; i < nums.length; i++)
+            nums[i] *= nums[i];
         
         Arrays.sort(nums);
-        
+
         return nums;
     }
 }
