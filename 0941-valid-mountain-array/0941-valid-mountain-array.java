@@ -5,7 +5,7 @@ class Solution {
 
         // 배열 안의 최대값과 인덱스 저장
         for (int i = 0; i < arr.length; i++) {
-            if(arr[i] > max) {
+            if (max < arr[i]) {
                 max = arr[i];
                 idx = i;
             }
