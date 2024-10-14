@@ -7,9 +7,9 @@ class Solution {
             sum += num;
         
         for (int i = 0; i < nums.length; i++) {
-            left += nums[i];
-            if (left == sum - left)
+            if (left == sum - left - nums[i])
                 return i;
+            left += nums[i];
         }
         
         return -1;
