@@ -9,7 +9,7 @@ class Solution {
             if (arr[i] > arr[i - 1])
                 arr[i - 1] = arr[i];
 
-            // 배열 요소 하나씩 왼쪽으로 밀기
+            // 배열 요소 1칸씩 왼쪽으로 밀기
             if (i == 1) {
                 for (int j = 1; j < arr.length; j++)
                     arr[j - 1] = arr[j];
