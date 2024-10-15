@@ -6,15 +6,14 @@ class Solution {
         while (left < right) {
             int sum = numbers[left] + numbers[right];
             
-            if (sum == target) {
+            if (sum == target)
                 break;
-            }
-            else if (sum < target) {
+
+            else if (sum < target)
                 left++;
-            }
-            else {
+
+            else
                 right--;
-            }
         }
         
         return new int[]{left+1, right+1};
