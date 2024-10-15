@@ -6,7 +6,7 @@ class Solution {
          for (int num : nums)
             arr[num] = 1;
         
-        for (int i = 1; i < nums.length + 1; i++){
+        for (int i = 1; i < nums.length + 1; i++) {
             if (arr[i] == 0)
                 list.add(i);
         }
