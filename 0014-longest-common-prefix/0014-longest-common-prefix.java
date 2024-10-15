@@ -2,6 +2,7 @@ class Solution {
     public String longestCommonPrefix(String[] strs) {
         StringBuilder sb = new StringBuilder();
 
+        // 한 단어씩 비교 후 공통 문자열만 저장
         for (int i = 0; i < strs[0].length(); i++) {
             char c = strs[0].charAt(i);
 
