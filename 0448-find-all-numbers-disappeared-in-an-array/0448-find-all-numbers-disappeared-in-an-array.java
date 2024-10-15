@@ -1,14 +1,16 @@
 class Solution {
     public List<Integer> findDisappearedNumbers(int[] nums) {
-        List<Integer> result = new ArrayList<>();
+        int[] arr = new int[nums.length + 1];
+        List<Integer> list = new ArrayList<>();
         
-        Arrays.sort(nums);
+         for (int num : nums)
+            arr[num] = 1;
         
-        for (int i = 0; i < nums.length; i++) {
-            if (Arrays.binarySearch(nums, i + 1) < 0)
-                result.add(i + 1);
+        for (int i = 1; i <= nums.length; i++){
+            if (arr[i] == 0)
+                list.add(i);
         }
         
-        return result;
+        return list;
     }
 }
