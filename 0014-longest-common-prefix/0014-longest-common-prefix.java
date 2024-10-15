@@ -6,9 +6,8 @@ class Solution {
             char c = strs[0].charAt(i);
 
             for (String str : strs) {
-                if (str.length() <= i || c != str.charAt(i)) {
+                if (str.length() <= i || c != str.charAt(i))
                     return sb.toString();
-                }
             }
 
             sb.append(c);
