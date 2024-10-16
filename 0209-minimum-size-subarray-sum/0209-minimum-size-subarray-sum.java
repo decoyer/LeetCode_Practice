@@ -5,9 +5,11 @@ class Solution {
         int result = Integer.MAX_VALUE;
 
         for (int i = 0; i < nums.length; i++) {
+            // 타겟 값과 동일한 요소 발견 시 1 반환
             if (nums[i] == target)
                 return 1;
 
+            
             sum += nums[i];
 
             while (sum >= target) {
