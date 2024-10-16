@@ -3,14 +3,12 @@ class Solution {
         int cnt = 0, result = 0;
         
         for (int num : nums) {
-            if (num == 1)
-                cnt++;
-
-            else
+            if (num == 0)
                 cnt = 0;
-                
-            if (result < cnt)
-                result = cnt;
+            else
+                cnt++;
+            
+            result = (result < cnt) ? cnt : result;
         }
         
         return result;
