@@ -3,10 +3,12 @@ class Solution {
         List<Integer> list = new ArrayList<>();
         double num = 1;
         
-        for (int i = 0; i <= rowIndex; i++) {
+        for (int i = 0; i < rowIndex; i++) {
             list.add((int)num);
             num = num * (rowIndex - i) / (i + 1);
         }
+
+        list.add(1);
 
         return list;
     }
