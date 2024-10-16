@@ -1,7 +1,7 @@
 class Solution {
     public List<Integer> getRow(int rowIndex) {
         List<Integer> list = new ArrayList<>();
-        double num = 1;
+        long num = 1;
         
         for (int i = 0; i < rowIndex; i++) {
             list.add((int)num);
