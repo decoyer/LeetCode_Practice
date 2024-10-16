@@ -5,8 +5,10 @@ class Solution {
         for (int num : nums) {
             if (num == 1)
                 cnt++;
+
             else
                 cnt = 0;
+                
             if (result < cnt)
                 result = cnt;
         }
