@@ -4,7 +4,7 @@ class Solution {
         // 공백을 제외한 단어만 배열에 저장
         String[] arr = s.split(" ");
 
-        // 배열에 저장된 단어 조합을 역순으로로 문자열에 저장
+        // 배열에 저장된 단어 조합을 역순으로 문자열에 저장
         for (String words : arr) {
             StringBuilder sb = new StringBuilder(words);
             result.append(sb.reverse() + " ");
