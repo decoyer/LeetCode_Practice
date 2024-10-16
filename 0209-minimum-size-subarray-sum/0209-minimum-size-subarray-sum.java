@@ -9,9 +9,10 @@ class Solution {
             if (nums[i] == target)
                 return 1;
 
-            
+            // 배열 순회하면서 요소 합이 타겟 값보다 높을 때 확인
             sum += nums[i];
 
+            // 왼쪽부터 합에서 빼면서 조건을 만족하는 최소 길이 저장
             while (sum >= target) {
                 result = Math.min(result, i - idx + 1);
                 sum -= nums[idx++];
