@@ -10,7 +10,7 @@ class Solution {
                 cnt++;
 
             // 최대 카운트(연속) 값을 저장
-            result = (result < cnt) ? cnt : result;
+            result = result < cnt ? cnt : result;
         }
         
         return result;
