@@ -6,7 +6,7 @@ class Solution {
         for (int i = 0; i < nums.length; i++) {
             // 값이 0인 요소 탐색(1번 포인터)
             if (nums[i] != 0) {
-                // 2번 포인터만 값이 0이고 1번 포인터와 다를 때 서로 자리바꿈
+                // 포인터 위치 다르고 1개만 값이 0일 때 서로 자리바꿈
                 if (nums[idx] == 0 && i != idx) {
                     int tmp = nums[i];
                     nums[i] = nums[idx];
