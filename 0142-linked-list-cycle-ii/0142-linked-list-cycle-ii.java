@@ -1,14 +1,3 @@
-/**
- * Definition for singly-linked list.
- * class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
- */
 public class Solution {
     public ListNode detectCycle(ListNode head) {
         ListNode fast = head;
@@ -20,10 +9,11 @@ public class Solution {
             
             if (fast == slow) {
                 slow = head;
-                while(slow != fast) {
+                while (slow != fast) {
                 slow = slow.next;
                 fast = fast.next;
                 }
+                
                 return slow;
             }
         }
