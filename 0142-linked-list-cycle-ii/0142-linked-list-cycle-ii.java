@@ -9,7 +9,7 @@ public class Solution {
             fast = fast.next.next;
             slow = slow.next;
 
-            // 싸이클이 존재하면 
+            // 싸이클이 존재하면 1칸씩 이동하며 2개의 노드가 만나는 지점 찾기
             if (fast == slow) {
                 slow = head;
                 
