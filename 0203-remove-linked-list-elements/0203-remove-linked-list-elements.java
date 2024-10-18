@@ -3,7 +3,7 @@ class Solution {
         // 노드 값이 있을 때만 순환
         if (head == null)
             return null;
-
+ 
         // 재귀형 함수로 작성
         head.next = removeElements(head.next, val);
 
