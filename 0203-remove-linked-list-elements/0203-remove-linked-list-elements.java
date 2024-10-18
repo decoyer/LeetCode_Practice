@@ -1,6 +1,6 @@
 class Solution {
     public ListNode removeElements(ListNode head, int val) {
-        // 노드 값이 있을 때만 반환
+        // 노드 값이 있을 때만 순환
         if (head == null)
             return null;
 
