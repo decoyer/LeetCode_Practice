@@ -10,16 +10,16 @@ class Solution {
         for (int i = 0; i <= n; i++)
             end = end.next;
 
-        // 포인터1 노드 끝까지 이동할 때까지 포인터2 이동
+        // 삭제하려는 노드 1칸 뒤에 포인터2 위치(포인터1 노드 끝까지 이동)
         while (end != null) {
             start = start.next;
             end = end.next;
         }
 
-        // 삭제하려는 노드 1칸 뒤에 포인터2 위치
+        // 삭제하려는 노드 스킵
         start.next = start.next.next;
 
-        // 삭제하려는 노드 스킵하여 반환
+        
         return tmp.next;
     }
 }
